@@ -1,0 +1,12 @@
+container-fluid {
+}
+
+.btn btn-primary{
+    float: right;
+    color: green;
+
+}
+
+.d-inline-block{
+    float: left;
+}

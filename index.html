@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Instagram Feed</title>
+    <!--Bootstrap Links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/072e5df971.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </a
+              <i class="fa-regular fa-gear"></i>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="#">Log out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create New Post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!--Grid button -->
+    <div class="container-fluid p-2">
+      <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true"><i
+                      class="fa-solid fa-table-cells"></i></a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+          </li>
+      </ul>
+
+
+      <!-- photo grid -->
+      <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i1.wp.com/handluggageonly.co.uk/wp-content/uploads/2015/05/Hand-Luggage-Only-7.jpg?fit=1600%2C1067&ssl=1" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/OIP.0aXu1_9expY9WB48ldD38wHaFj?rs=1&pid=ImgDetMain" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/R.eff3fd015e074a078cef8818d76a23f6?rik=VIOvrrL8Q5LVdA&riu=http%3a%2f%2fstatic.businessinsider.com%2fimage%2f55b29c8e371d2254008b98c8%2fimage.jpg&ehk=v9xQ5b63Hx09EU5wBl4j0OYQ1PG%2br4j2hQ7N0umR69g%3d&risl=1&pid=ImgRaw&r=0" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.pupvine.com/wp-content/uploads/2021/04/Beautiful-Red-Long-haired-grown-up-adult-Dachshund-dog-640x427.jpg" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/736x/ee/cf/d4/eecfd4a9c6bb96638eb551f8311321c1--weiner-dogs-golden-weiner-dog.jpg" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/OIP.zcBFKnqVPs85RJLf2ljwIgAAAA?rs=1&pid=ImgDetMain" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/R.3030f8b637b702f23c9b38f3f44038ac?rik=VOGPJ0Pw4CS54w&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f2%2f2a%2fClaude_Monet_040.jpg&ehk=jv5dY%2f7wh64jsWM%2fzsMRj8OUyeshtYHe67uarb9l2dA%3d&risl=&pid=ImgRaw&r=0" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/R.e731184a505e919d7a97b98697a40997?rik=iv6n%2fu2jO%2bLoaA&riu=http%3a%2f%2fmedia.overstockart.com%2fcache%2fdata%2fproduct_images%2fMON1478-1000x1000.jpg&ehk=A%2bAxb1peW1Tb5ADDMZrF3I4GJkUDkqubFVGxZYJ0WJo%3d&risl=&pid=ImgRaw&r=0" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://th.bing.com/th/id/OIP.XqAGBv6B0wdLyje6RTfo8wHaF0?rs=1&pid=ImgDetMain" class="img-fluid w-100" alt=""></div>
+        </div>
+    </div>
+       
+
+
+
+
+
+
+
+  </body>
+</html>
